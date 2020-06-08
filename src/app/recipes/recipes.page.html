@@ -5,5 +5,7 @@
 </ion-header>
 
 <ion-content>
-  <p>Working</p>
+  <ion-list>
+    <app-recipe-item *ngFor="let recipe of recipes" [recipeItem]="recipe"></app-recipe-item>
+  </ion-list>
 </ion-content>

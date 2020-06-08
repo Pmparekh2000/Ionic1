@@ -1,0 +1,7 @@
+<ion-item [routerLink]="['./', recipeItem.id]">
+  <ion-avatar slot="start">
+    <!-- Ion avatar will only load the image when its seen by the user so when the user moves out out of the image view port then the image will not be loaded -->
+    <ion-img [src]="recipeItem.imageUrl"></ion-img>
+  </ion-avatar>
+  <ion-label>{{recipeItem.title}}</ion-label>
+</ion-item>
